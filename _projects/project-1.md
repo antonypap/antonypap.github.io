@@ -6,3 +6,5 @@ collection: projects
 ---
 
 Classified genres and emotions in songs using Deep Learning (LSTMs, CNNs, RNNs) through spectrogram information. Kaggle competition (Python)
+
+<a href='https://github.com/antonypap'>Check project on GitHub</a>

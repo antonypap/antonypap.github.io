@@ -12,29 +12,24 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.Sc. in Applied Machine Learning, **Imperial College London**, London, UK (10/2022)
+* B.Sc. & M.Eng. in Electrical and Computer Engineering, **National Technical University of Athens (NTUA)**, Athens, Greece (09/2015-03/2022)
+* ERASMUS Exchange Student at the Computer Science and Engineering School, **Politecnico di Milano**, Milan, Italy (02/2020-07/2020)
 
 Professional experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* **Software Engineer / Analyst (Research and Informatics Corps)**, Hellenic Army, Greece (09/2021-09/2022)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Software Engineer**, Vodafone Greece, Greece (03/2019-09/2019)
 
 Honours, Awards and Achievements
 ======
-  
+* **95th Percentile** on Rational and Cognitive Adaptability, Adaptability Quotient (AQ), TLabs (2020)
+* **371st Global Rank (Top 8%)** in the IEEEXtreme 13.0 24h Programming Competition (2019)
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+  <ul>{% for post in site.publications reversed%}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
@@ -46,23 +41,32 @@ Publications
   
 Notable Projects
 ======
-  <ul>{% for post in site.projects %}
+  <ul>{% for post in site.projects reversed%}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 Technical Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python (TensorFlow, PyTorch)
+* MATLAB
+* SQL
+* Git
+* C/C++
+* Java
+* JavaScript
+* Swift
 
 Participations and Volunteering
 ======
-* Currently signed in to 43 different slack teams
+* IEEE
+* EESTEC
+* TEDxAthens
+* Unique Minds
 
 Languages
 ======
-* 
+* English (fluent; C2)
+* Italian (basic; B1)
+* Greek (native)
+
+<a href='/files/CV.pdf'>Download CV</a>
