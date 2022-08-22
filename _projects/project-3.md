@@ -1,7 +1,7 @@
 ---
 title: "F1 Performance Analysis and Visualisation"
-date: 2020-08-07
-excerpt: "Data Analysis of drivers performance from telemetry using Python <br><br> <img src='/images/projects/Hungary_2022_Qualifying_RUS_LEC.png' style='width:30%'>"
+date: 2022-08-07
+excerpt: "Data Analysis of drivers performance from telemetry using Python"
 collection: projects
 ---
 
