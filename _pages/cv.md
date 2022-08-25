@@ -69,4 +69,4 @@ Languages
 * Italian (basic; B1)
 * Greek (native)
 
-<a href='/files/CV.pdf'>Download CV</a>
+<a href='/files/CV.pdf'>[Download CV]</a>
