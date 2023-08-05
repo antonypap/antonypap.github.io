@@ -10,7 +10,7 @@ redirect_from:
 
 Hello, I'm Antonis an _A.I._, _technology_ and _music_ enthusiast!
 
-I am an Electrical and Computer Engineering graduate from the National Technical University of Athens and currently interested in research in the field of Machine Learning and Computer Vision. 🤖
+I am an Electrical and Computer Engineering graduate from the National Technical University of Athens with Software Engineering experience in the industry, currently pursuing an MSc in Applied Machine Learning at Imperial College London and interested in research in the fields of Computer Vision and Machine Learning Safety. 🤖
 
 <figure>
   <img src='/images/DALL-E/DALL·E 2022-07-29 12.23.30 - An Andy Warhol style painting of a corgi wearing sunglasses.png' style="width:60%">
