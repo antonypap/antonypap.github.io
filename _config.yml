@@ -10,7 +10,7 @@ locale                   : "en-UK"
 title                    : "AP"
 title_separator          : "-"
 name                     : &name "Antonios Papaoikonomou"
-description              : &description "You know what you doin!"
+description              : &description "Computer/Software Engineer with MSc in Applied Machine Learning"
 url                      : https://antonypap.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "antonypap/antonypap.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Antonios Papaoikonomou"
   avatar           : "profile.JPG"
-  bio              : "MSc Applied Machine Learning, Imperial | <br> ML Researcher"
+  bio              : "MSc Applied Machine Learning @ Imperial | ML Researcher"
   location         : "London, UK"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
