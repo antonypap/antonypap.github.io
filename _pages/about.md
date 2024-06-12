@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a passionate and curious _ML Researcher_ and _Software Engineer_, currently pursuing an MSc in Applied Machine Learning at Imperial College London. My research interests revolve around _AI Multi-Agent Systems_, _Computer Vision_, _Machine Learning Safety_ and _Natural Language Processing_, and I enjoy exploring new challenges and opportunities in these domains. 🤖
+I am a passionate and curious _Machine Learning Engineer_ and _Software Engineer_, having recently completed an MSc in Applied Machine Learning at Imperial College London. My research interests revolve around _Machine Learning Safety_, _AI Multi-Agent Systems_, _Computer Vision_, and _Natural Language Processing_, and I enjoy exploring new challenges and opportunities in these domains. 🤖
 
-Before joining Imperial, I have worked as a Software Engineer and Analyst in the industry where I acquired valuable skills through various projects. I have a strong background in Electrical and Computer Engineering, having graduated from the National Technical University of Athens with a joint BSc and MSc degree and specialising in Computer Science. During my studies I also spent a semester as an exchange student at Politecnico di Milano, where I studied at the Computer Science and Engineering School.
+Before joining Imperial, I primarily worked as a Software Engineer in the industry, where I acquired valuable skills through various projects. I have a strong background in Electrical and Computer Engineering, having graduated from the National Technical University of Athens with a joint BSc and MSc degree, specialising in Computer Science. During my studies, I also spent a semester as an exchange student at Politecnico di Milano, where I studied at the Computer Science and Engineering School.
 
 I am driven by my curiosity and enthusiasm for _AI_, _technology_, and _music_, and I aspire to make a positive impact in the world through my research and innovation. I value collaboration, creativity, and learning, and I seek to expand my knowledge and network in the field of Machine Learning.
 

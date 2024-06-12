@@ -17,7 +17,9 @@ redirect_from:
 
 ## Professional experience
 
-* **Software Engineer / Analyst**, Hellenic Army General Staff, Greece (11/2021-09/2022)
+* **Machine Learning Engineer**, Kaedim, United Kingdom (09/2023-05/2024)
+
+* **Software Engineer**, Hellenic Army General Staff, Greece (11/2021-09/2022)
 
 * **Software Engineer**, Vodafone Greece, Greece (03/2019-09/2019)
 
@@ -46,19 +48,25 @@ redirect_from:
 
 ## Technical Skills
 
-* Python (TensorFlow, PyTorch)
-* MATLAB
-* SQL
-* Git
-* C/C++
-* Java
-* JavaScript
-* Swift
-* GoLang
-* Bash
+### Programming Languages
+
+Python, SQL, JavaScript, C++, C, Java, HTML, CSS, MATLAB, Swift, GoLang, Bash
+
+### Frameworks/Technologies
+
+Docker, React.js, Node.js, Flask, FastAPI, Celery, Redis, Pandas, TensorFlow, PyTorch, Airflow
+
+### Cloud
+
+Amazon Web Services (AWS), EC2, S3, Lambda, RDS, CloudWatch, CodePipeline, Azure, Pinecone
+
+### Functional
+
+Git, CI/CD
 
 ## Participations and Volunteering
 
+* Center for AI Safety
 * IEEE
 * EESTEC
 * TEDxAthens
@@ -70,4 +78,4 @@ redirect_from:
 * Italian (basic; B1)
 * Greek (native)
 
-<a href='/files/CV.pdf'>[Download CV]</a>
+<!-- <a href='/files/CV.pdf'>[Download CV]</a> -->

@@ -11,7 +11,7 @@ locale                   : "en-UK"
 title                    : "AP"
 title_separator          : "-"
 name                     : &name "Antonios Papaoikonomou"
-description              : &description "Computer/Software Engineer with MSc in Applied Machine Learning"
+description              : &description "Software and Machine Learning Engineer with MSc in Applied Machine Learning, Imperial College London"
 url                      : https://antonypap.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "antonypap/antonypap.github.io"
@@ -22,10 +22,10 @@ repository               : "antonypap/antonypap.github.io"
 author:
   # Biographic information
   name             : "Antonios Papaoikonomou"
-  avatar           : "profile.JPG"
-  bio              : "MSc Applied Machine Learning @ Imperial | ML Researcher"
+  avatar           : "profile.jpg"
+  bio              : "MSc Applied Machine Learning @ Imperial | ML/SW Engineer"
   location         : "London, UK"
-  pronouns         : # example: "he/him"  
+  pronouns         : # example: "he/him"
   employer         : # example: "Imperial College London"
   uri              : # URL
   email            : # Email
