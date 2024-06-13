@@ -11,7 +11,7 @@ redirect_from:
 
 ## Education
 
-* M.Sc. in Applied Machine Learning, **Imperial College London**, London, UK (10/2022-10/2023)
+* M.Sc. in Applied Machine Learning, **Imperial College London**, London, UK (10/2022-09/2023)
 * B.Sc. & M.Eng. in Electrical and Computer Engineering, **National Technical University of Athens (NTUA)**, Athens, Greece (09/2015-03/2022)
 * ERASMUS Exchange Student at the Computer Science and Engineering School, **Politecnico di Milano**, Milan, Italy (02/2020-07/2020)
 
@@ -50,19 +50,19 @@ redirect_from:
 
 ### Programming Languages
 
-Python, SQL, JavaScript, C++, C, Java, HTML, CSS, MATLAB, Swift, GoLang, Bash
+* Python, SQL, JavaScript, C++, C, Java, HTML, CSS, MATLAB, Swift, GoLang, Bash
 
 ### Frameworks/Technologies
 
-Docker, React.js, Node.js, Flask, FastAPI, Celery, Redis, Pandas, TensorFlow, PyTorch, Airflow
+* Docker, React.js, Node.js, Flask, FastAPI, Celery, Redis, Pandas, TensorFlow, PyTorch, Airflow
 
 ### Cloud
 
-Amazon Web Services (AWS), EC2, S3, Lambda, RDS, CloudWatch, CodePipeline, Azure, Pinecone
+* Amazon Web Services (AWS), EC2, S3, Lambda, RDS, CloudWatch, CodePipeline, Azure, Pinecone
 
 ### Functional
 
-Git, CI/CD
+* Git, CI/CD
 
 ## Participations and Volunteering
 
