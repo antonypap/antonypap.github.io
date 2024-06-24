@@ -12,7 +12,7 @@ redirect_from:
 ## Education
 
 * M.Sc. in Applied Machine Learning, **Imperial College London**, London, UK (10/2022-09/2023)
-* B.Sc. & M.Eng. in Electrical and Computer Engineering, **National Technical University of Athens (NTUA)**, Athens, Greece (09/2015-03/2022)
+* B.Sc. & M.Sc. in Electrical and Computer Engineering, **National Technical University of Athens (NTUA)**, Athens, Greece (09/2015-03/2022)
 * ERASMUS Exchange Student at the Computer Science and Engineering School, **Politecnico di Milano**, Milan, Italy (02/2020-07/2020)
 
 ## Professional experience
@@ -24,6 +24,10 @@ redirect_from:
 * **Software Engineer**, Vodafone Greece, Greece (03/2019-09/2019)
 
 ## Honours, Awards and Achievements
+
+* **EEE Departmental Scholarship**, Imperial College London (2022)
+
+* **Scholarship** for post-graduate studies abroad, General Michael Arnaoutis Foundation (2022)
 
 * **95th Percentile** on Rational and Cognitive Adaptability, Adaptability Quotient (AQ), TLabs (2020)
 * **371st Global Rank (Top 8%)** in the IEEEXtreme 13.0 24h Programming Competition (2019)
@@ -54,7 +58,7 @@ redirect_from:
 
 ### Frameworks/Technologies
 
-* Docker, React.js, Node.js, Flask, FastAPI, Celery, Redis, Pandas, TensorFlow, PyTorch, Airflow
+* Docker, React.js, Node.js, Flask, FastAPI, Celery, Redis, Airflow, Pandas, TensorFlow, PyTorch, OpenCV
 
 ### Cloud
 
