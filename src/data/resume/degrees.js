@@ -1,15 +1,24 @@
 const degrees = [
   {
-    school: 'Stanford University',
-    degree: 'M.S. Computational and Mathematical Engineering',
-    link: 'https://stanford.edu',
-    year: 2016,
+    school: 'Imperial College London',
+    degree: 'M.Sc. Applied Machine Learning',
+    link: 'https://www.imperial.ac.uk/',
+    location: 'London, UK',
+    year: 2023,
   },
   {
-    school: 'University at Buffalo',
-    degree: 'B.S. Electrical Engineering, Computer Engineering',
-    link: 'https://buffalo.edu',
-    year: 2012,
+    school: 'National Technical University of Athens (NTUA)',
+    degree: 'B.Sc. & M.Eng. Electrical and Computer Engineering',
+    link: 'https://www.ece.ntua.gr/en/',
+    location: 'Athens, Greece',
+    year: 2022,
+  },
+  {
+    school: 'Politecnico di Milano',
+    degree: 'ERASMUS exchange student @ Computer Science and Engineering School',
+    link: 'https://www.polimi.it/en/',
+    location: 'Milan, Italy',
+    year: 2020,
   },
 ];
 

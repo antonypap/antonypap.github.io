@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ContactIcons from '../Contact/ContactIcons';
+import details from '../../data/info';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -12,9 +13,9 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
+        <h2>{details.firstName} {details.lastName}</h2>
         <p>
-          <a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a>
+          <a href={`mailto:${details.email}`}>{details.email}</a>
         </p>
       </header>
     </section>
@@ -22,13 +23,10 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Michael. I am a{' '}
-        <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC
-        alumnus, and the co-founder and CTO of{' '}
-        <a href="https://promptfoo.dev">Promptfoo</a>. Previously, I
-        was VP of Engineering at <a href="https://usesmileid.com">SmileID</a>,
-        co-founder and CTO of <a href="https://arthena.com">Arthena</a>, and
-        co-founded <a href="https://matroid.com">Matroid</a>.
+        Hi, I&apos;m {details.firstName}. I am a{' '}
+        <a href="https://imperial.ac.uk">Imperial College London</a> and a{' '}
+        <a href="https://www.ntua.gr/en/">NTUA</a> graduate,
+        and have been working as a Software Engineer and Machine Learning Engineer in the past.
       </p>
       <ul className="actions">
         <li>
@@ -48,7 +46,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.
+        &copy; {details.firstName} {details.lastName} <Link to="/">antonypap.github.io</Link>.
       </p>
     </section>
   </section>
