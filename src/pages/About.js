@@ -12,9 +12,10 @@ const SpotifyPlaylistEmbed = ({ playlistId, height = 80 }) => (
     width="100%"
     height={height}
     style={{ borderRadius: '12px' }}
-    frameBorder="0"
+    // frameBorder="0"
     allowFullScreen=""
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
   />
 );
 
