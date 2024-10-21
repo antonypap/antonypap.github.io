@@ -65,10 +65,10 @@ const About = () => {
           </div>
         </header>
         <Markdown>{markdown}</Markdown>
-        <div>
+        {/* <div>
           In the meantime, you can also check out this playlist:
           <SpotifyPlaylistEmbed playlistId="3rGSys39PU0pSehtA1YRj8" />
-        </div>
+        </div> */}
       </article>
     </Main>
   );
