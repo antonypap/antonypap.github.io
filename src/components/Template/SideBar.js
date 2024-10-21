@@ -18,15 +18,18 @@ const SideBar = () => (
           <a href={`mailto:${details.email}`}>{details.email}</a>
         </p>
       </header>
+      <ContactIcons />
     </section>
 
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m {details.firstName}. I am a{' '}
-        <a href="https://imperial.ac.uk">Imperial College London</a> and a{' '}
-        <a href="https://www.ntua.gr/en/">NTUA</a> graduate,
-        and have been working as a Software Engineer and Machine Learning Engineer in the past.
+        Hi, I&apos;m {details.firstName}! I am an engineer at heart, with degrees from{' '}
+        <a href="https://imperial.ac.uk">Imperial College London</a> and <a href="https://www.ntua.gr/en/">NTUA</a>.{' '}
+        I&apos;ve always loved the challenge of turning complex problems into real-world solutions,{' '}
+        whether as a Software Engineer, Machine Learning Engineer, or just a curious tech enthusiast.{' '}
+        From building high-performance systems to harnessing the power of AI,{' '}
+        I&apos;m passionate about creating technology that makes a difference.
       </p>
       <ul className="actions">
         <li>
@@ -44,7 +47,6 @@ const SideBar = () => (
     </section>
 
     <section id="footer">
-      <ContactIcons />
       <p className="copyright">
         &copy; {details.firstName} {details.lastName} <Link to="/">antonypap.github.io</Link>.
       </p>

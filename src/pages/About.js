@@ -1,8 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
 
 import Main from '../layouts/Main';
+
+const SpotifyPlaylistEmbed = ({ playlistId, height = 80 }) => (
+  <iframe
+    title="Spotify Playlist Embed"
+    src={`https://open.spotify.com/embed/playlist/${playlistId}`}
+    width="100%"
+    height={height}
+    style={{ borderRadius: '12px' }}
+    frameBorder="0"
+    allowFullScreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  />
+);
+
+SpotifyPlaylistEmbed.propTypes = {
+  playlistId: PropTypes.string.isRequired,
+  height: PropTypes.number,
+};
+
+SpotifyPlaylistEmbed.defaultProps = {
+  height: 80,
+};
 
 const About = () => {
   const [markdown, setMarkdown] = useState('');
@@ -32,6 +55,10 @@ const About = () => {
           </div>
         </header>
         <Markdown>{markdown}</Markdown>
+        <div>
+          In the meantime, you can also check out this playlist:
+          <SpotifyPlaylistEmbed playlistId="3rGSys39PU0pSehtA1YRj8" />
+        </div>
       </article>
     </Main>
   );
