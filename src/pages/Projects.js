@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 
 import Cell from '../components/Projects/Cell';
-import data from '../data/resume/projects';
+import projects from '../data/resume/projects';
 
 const Projects = () => (
   <Main title="Projects" description="Learn about Antonios Papaoikonomou's projects.">
@@ -17,7 +17,7 @@ const Projects = () => (
           <p>A selection of projects that I&apos;m not too ashamed of</p>
         </div>
       </header>
-      {data.map((project) => (
+      {projects.map((project) => (
         <Cell data={project} key={project.title} />
       ))}
     </article>

@@ -13,9 +13,9 @@ const SideBar = () => (
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
       <header>
-        <h2>{details.firstName} {details.lastName}</h2>
+        <h2>{details.basics.name}</h2>
         <p>
-          <a href={`mailto:${details.email}`}>{details.email}</a>
+          <a href={`mailto:${details.basics.email}`}>{details.basics.email}</a>
         </p>
       </header>
       <ContactIcons />
@@ -24,7 +24,7 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m {details.firstName}! I am an engineer at heart, with degrees from{' '}
+        Hi, I&apos;m {details.basics.firstName}! I am an engineer at heart, with degrees from{' '}
         <a href="https://imperial.ac.uk">Imperial College London</a> and <a href="https://www.ntua.gr/en/">NTUA</a>.{' '}
         I&apos;ve always loved the challenge of turning complex problems into real-world solutions,{' '}
         whether as a Software Engineer, Machine Learning Engineer, or just a curious tech enthusiast.{' '}
@@ -48,7 +48,7 @@ const SideBar = () => (
 
     <section id="footer">
       <p className="copyright">
-        &copy; {details.firstName} {details.lastName} <Link to="/">antonypap.github.io</Link>.
+        &copy; {details.basics.firstName} {details.basics.lastName} <Link to="/">antonypap.github.io</Link>.
       </p>
     </section>
   </section>

@@ -31,7 +31,7 @@ const data = [
   {
     key: 'location',
     label: 'Current city',
-    value: details.city,
+    value: `${details.basics.location.city}, ${details.basics.location.countryCode}`,
   },
   // {
   //   key: 'countries',

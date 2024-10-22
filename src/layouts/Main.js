@@ -14,8 +14,8 @@ const Main = (props) => (
     <Analytics />
     <ScrollToTop />
     <Helmet
-      titleTemplate={`%s | ${details.firstName[0]}${details.lastName[0]}`}
-      defaultTitle={`${details.firstName} ${details.lastName}`}
+      titleTemplate={`%s | ${details.basics.firstName[0]}${details.basics.lastName[0]}`}
+      defaultTitle={`${details.basics.name}`}
       defer={false}
     >
       {props.title && <title>{props.title}</title>}

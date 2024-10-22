@@ -9,34 +9,39 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 
 import details from './info';
 
+const getProfileUrl = (network) => {
+  const profile = details.basics.profiles.find((p) => p.network === network);
+  return profile?.url;
+};
+
 const data = [
   {
-    link: details.links.github,
+    link: getProfileUrl('GitHub'),
     label: 'Github',
     icon: faGithub,
   },
   {
-    link: details.links.linkedin,
+    link: getProfileUrl('LinkedIn'),
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
   // {
-  //   link: details.links.twitter,
+  //   link: getProfileUrl('Twitter'),
   //   label: 'Twitter',
   //   icon: faTwitter,
   // },
   {
-    link: details.links.googleScholar,
+    link: getProfileUrl('Google Scholar'),
     label: 'Google Scholar',
     icon: faGoogleScholar,
   },
   // {
-  //   link: details.links.orcid,
+  //   link: getProfileUrl('ORCID')
   //   label: 'ORCID ID',
   //   icon: faOrcid,
   // },
   {
-    link: `mailto:${details.email}`,
+    link: `mailto:${details.basics.email}`,
     label: 'Email',
     icon: faEnvelope,
   },
