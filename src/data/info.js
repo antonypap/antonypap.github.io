@@ -1,5 +1,13 @@
 // Conforms to https://jsonresume.org/schema/
 
+import education from './resume/education';
+import work from './resume/work';
+import projects from './resume/projects';
+import publications from './resume/publications';
+import awards from './resume/awards';
+import volunteer from './resume/volunteering';
+import { skills } from './resume/skills';
+
 const details = {
   basics: {
     firstName: 'Antonios',
@@ -72,7 +80,6 @@ const details = {
       name: 'Sustainability',
       keywords: [
         'Green Tech',
-        'Sustainable',
         'Environment',
       ],
     },
@@ -84,6 +91,13 @@ const details = {
       ],
     },
   ],
+  education,
+  work,
+  projects,
+  publications,
+  awards,
+  volunteer,
+  skills,
 };
 
 export default details;

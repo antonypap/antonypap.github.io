@@ -34,20 +34,20 @@ const Skills = ({ skills, categories }) => {
 
     const comparator = (a, b) => {
       let ret = 0;
-      if (a.competency > b.competency) ret = -1;
-      else if (a.competency < b.competency) ret = 1;
-      else if (a.category[0] > b.category[0]) ret = -1;
-      else if (a.category[0] < b.category[0]) ret = 1;
-      else if (a.title > b.title) ret = 1;
-      else if (a.title < b.title) ret = -1;
+      if (a.level > b.level) ret = -1;
+      else if (a.level < b.level) ret = 1;
+      else if (a.keywords[0] > b.keywords[0]) ret = -1;
+      else if (a.keywords[0] < b.keywords[0]) ret = 1;
+      else if (a.name > b.name) ret = 1;
+      else if (a.name < b.name) ret = -1;
       return ret;
     };
 
     return skills
       .sort(comparator)
-      .filter((skill) => actCat === 'All' || skill.category.includes(actCat))
+      .filter((skill) => actCat === 'All' || skill.keywords.includes(actCat))
       .map((skill) => (
-        <SkillBar categories={categories} data={skill} key={skill.title} />
+        <SkillBar categories={categories} data={skill} key={skill.name} />
       ));
   };
 
@@ -79,9 +79,9 @@ const Skills = ({ skills, categories }) => {
 Skills.propTypes = {
   skills: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string,
-      competency: PropTypes.number,
-      category: PropTypes.arrayOf(PropTypes.string),
+      name: PropTypes.string,
+      level: PropTypes.number,
+      keywords: PropTypes.arrayOf(PropTypes.string),
     }),
   ),
   categories: PropTypes.arrayOf(
