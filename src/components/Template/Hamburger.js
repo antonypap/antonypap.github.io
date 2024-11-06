@@ -7,6 +7,7 @@ const Menu = lazy(() => import('react-burger-menu/lib/menus/slide'));
 
 const Hamburger = () => {
   const [open, setOpen] = useState(false);
+  const navRoutes = routes.filter((route) => route.showInNav);
 
   return (
     <div className="hamburger-container">
@@ -30,7 +31,7 @@ const Hamburger = () => {
       <Suspense fallback={<></>}>
         <Menu right isOpen={open}>
           <ul className="hamburger-ul">
-            {routes.map((l) => (
+            {navRoutes.map((l) => (
               <li key={l.label}>
                 <Link to={l.path} onClick={() => setOpen(!open)}>
                   <h3 className={l.index && 'index-li'}>{l.label}</h3>

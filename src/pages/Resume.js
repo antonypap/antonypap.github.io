@@ -33,8 +33,11 @@ const Resume = () => (
       <header>
         <div className="title">
           <h2>
-            <Link to="/resume">CV</Link>
+            <Link to="/api/resume">CV</Link>
           </h2>
+          <p>
+            Hint: You can click on the header above to get my CV in a &quot;mock&quot; <a href="https://jsonresume.org/schema">JSON Resume</a> format
+          </p>
           <div className="link-container">
             {Object.keys(sections).map((sec) => (
               <h4 key={sec}>

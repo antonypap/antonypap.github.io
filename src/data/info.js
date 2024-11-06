@@ -7,7 +7,7 @@ const details = {
     name: 'Antonios Papaoikonomou',
     label: 'Software Engineer and Machine Learning Engineer | MSc Applied Machine Learning @ Imperial',
     email: 'antonypap@hotmail.com',
-    url: '',
+    url: 'https://antonypap.github.io/',
     summary: '',
     location: {
       city: 'London',
@@ -24,21 +24,21 @@ const details = {
         username: 'antonypap',
         url: 'https://github.com/antonypap',
       },
-      {
-        network: 'Twitter',
-        username: 'antonypap',
-        url: 'https://x.com/antonypap',
-      },
+      // {
+      //   network: 'Twitter',
+      //   username: 'antonypap',
+      //   url: 'https://x.com/antonypap',
+      // },
       {
         network: 'Google Scholar',
         username: 'aXE1Op0AAAAJ',
         url: 'https://scholar.google.com/citations?user=aXE1Op0AAAAJ',
       },
-      {
-        network: 'ORCID',
-        username: '0000-0002-4860-9101',
-        url: 'https://orcid.org/my-orcid?orcid=0000-0002-4860-9101',
-      },
+      // {
+      //   network: 'ORCID',
+      //   username: '0000-0002-4860-9101',
+      //   url: 'https://orcid.org/my-orcid?orcid=0000-0002-4860-9101',
+      // },
     ],
   },
   languages: [
@@ -66,6 +66,21 @@ const details = {
         'Motorsport',
         'F1',
         'Cars',
+      ],
+    },
+    {
+      name: 'Sustainability',
+      keywords: [
+        'Green Tech',
+        'Sustainable',
+        'Environment',
+      ],
+    },
+    {
+      name: 'Music',
+      keywords: [
+        'Guitar',
+        'Music',
       ],
     },
   ],

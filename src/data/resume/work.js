@@ -33,7 +33,7 @@ const work = [
     url: 'https://army.gr/en/archiki-en/',
     startDate: '2022-09-21',
     endDate: '2021-11-18',
-    summary: 'Research and Informatics Corps, involved in Internal Ops and Cyber-defence',
+    summary: 'Research and Informatics Corps, involved in Internal Ops and Cyber-defence.',
     highlights: [
       'Developed a search engine algorithm and interface for classified documents using Java, JavaScript and Python',
       'Implemented indexing techniques to optimise query performance in relational databases',
@@ -46,7 +46,7 @@ const work = [
     url: 'https://www.vodafone.gr/',
     startDate: '2019-03-17',
     endDate: '2019-09-30',
-    summary: 'Part of the iOS My Vodafone App (GR) Optimization team',
+    summary: 'Part of the iOS My Vodafone App (GR) Optimization team.',
     highlights: [
       'Utilised efficient Scrum/Agile development methodologies',
       'Contributed to the application refactoring project and developed new features, improving performance',
