@@ -42,15 +42,34 @@ $font: (
   kerning-heading: 0.25em,
 );
 
-// Palette.
-$palette: (
-  bg: #ffffff,
-  bg-alt: #f4f4f4,
-  fg: #646464,
-  fg-bold: #3c3b3b,
-  fg-light: #aaaaaa,
-  border: rgba(160, 160, 160, 0.3),
-  border-bg: rgba(160, 160, 160, 0.075),
-  border-alt: rgba(160, 160, 160, 0.65),
-  accent: #2e59ba,
-);
+/* Light mode (default) */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f4f4f4;
+  --color-bg-transp: rgba(244, 244, 244, 0.85);
+  --color-fg: #646464;
+  --color-fg-bold: #3c3b3b;
+  --color-fg-light: #aaaaaa;
+  --color-border: rgba(160, 160, 160, 0.3);
+  --color-border-bg: rgba(160, 160, 160, 0.075);
+  --color-border-alt: rgba(160, 160, 160, 0.65);
+  --color-accent: #2e59ba;
+  --color-accent-rgb: 46, 89, 186; /* RGB equivalent of --color-accent */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1e1e1e;
+    --color-bg-alt: #2a2a2a;
+    --color-bg-transp: rgba(42, 42, 42, 0.85);
+    --color-fg: #e0e0e0;
+    --color-fg-bold: #ffffff;
+    --color-fg-light: #c4c4c4;
+    --color-border: rgba(255, 255, 255, 0.2);
+    --color-border-bg: rgba(255, 255, 255, 0.1);
+    --color-border-alt: rgba(255, 255, 255, 0.6);
+    --color-accent: #66aaff;
+    --color-accent-rgb: 102, 170, 255; /* RGB equivalent of --color-accent */
+  }
+}
