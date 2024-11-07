@@ -13,6 +13,15 @@
   margin: 0 0 _size(section-spacing) 0;
   position: relative;
 
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    text-align: center;
+  }
+
   > header {
     @include vendor("display", "flex");
     border-bottom: solid 1px var(--color-border);
@@ -260,4 +269,8 @@
       }
     }
   }
+}
+
+.post figure img {
+  width: 50%;
 }
