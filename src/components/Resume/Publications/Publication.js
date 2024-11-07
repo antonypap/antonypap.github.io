@@ -42,7 +42,7 @@ Publication.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string.isRequired,
     releaseDate: PropTypes.string.isRequired,
-    venue: PropTypes.string.isRequired,
+    venue: PropTypes.string,
     journal: PropTypes.string.isRequired,
     publisher: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
