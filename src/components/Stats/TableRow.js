@@ -1,8 +1,12 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const TableRow = ({
-  label, link, value, format,
+  label,
+  link = null,
+  value = null,
+  format = (x) => x,
 }) => (
   <tr>
     <td width="70%">{label}</td>
@@ -19,12 +23,6 @@ TableRow.propTypes = {
     PropTypes.number,
     PropTypes.string,
   ]),
-};
-
-TableRow.defaultProps = {
-  format: (x) => x,
-  link: null,
-  value: null,
 };
 
 export default TableRow;

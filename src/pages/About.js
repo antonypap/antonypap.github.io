@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -31,10 +32,6 @@ const SpotifyPlaylistEmbed = ({ playlistId, height = 152 }) => {
 SpotifyPlaylistEmbed.propTypes = {
   playlistId: PropTypes.string.isRequired,
   height: PropTypes.number,
-};
-
-SpotifyPlaylistEmbed.defaultProps = {
-  height: 152,
 };
 
 const About = () => {

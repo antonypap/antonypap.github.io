@@ -33,7 +33,6 @@ const Index = () => (
         <img
           src="/images/DALL-E/DALL·E 2022-07-29 12.23.30 - An Andy Warhol style painting of a corgi wearing sunglasses.png"
           alt="An Andy Warhol style painting of a corgi wearing sunglasses"
-          style={{ width: '50%' }}
         />
         <figcaption>
           <a href="https://openai.com/dall-e-2/">DALL·E 2</a> - An Andy Warhol style painting of a corgi wearing sunglasses

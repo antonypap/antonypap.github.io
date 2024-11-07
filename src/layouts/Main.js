@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -9,7 +10,12 @@ import ScrollToTop from '../components/Template/ScrollToTop';
 
 import details from '../data/info';
 
-const Main = (props) => (
+const Main = ({
+  children = null,
+  fullPage = false,
+  title = null,
+  description = "Antonios Papaoikonomou's personal website.",
+}) => (
   <HelmetProvider>
     <Analytics />
     <ScrollToTop />
@@ -18,13 +24,13 @@ const Main = (props) => (
       defaultTitle={`${details.basics.name}`}
       defer={false}
     >
-      {props.title && <title>{props.title}</title>}
-      <meta name="description" content={props.description} />
+      {title && <title>{title}</title>}
+      <meta name="description" content={description} />
     </Helmet>
     <div id="wrapper">
       <Navigation />
-      <div id="main">{props.children}</div>
-      {props.fullPage ? null : <SideBar />}
+      <div id="main">{children}</div>
+      {fullPage ? null : <SideBar />}
     </div>
   </HelmetProvider>
 );
@@ -37,13 +43,6 @@ Main.propTypes = {
   fullPage: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,
-};
-
-Main.defaultProps = {
-  children: null,
-  fullPage: false,
-  title: null,
-  description: "Antonios Papaoikonomou's personal website.",
 };
 
 export default Main;

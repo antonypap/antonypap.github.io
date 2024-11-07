@@ -1,9 +1,9 @@
-import React, { Suspense, lazy, useState } from 'react';
+import React, { Suspense, useState } from 'react';
 
 import { Link } from 'react-router-dom';
-import routes from '../../data/routes';
+import { slide as Menu } from 'react-burger-menu';
 
-const Menu = lazy(() => import('react-burger-menu/lib/menus/slide'));
+import routes from '../../data/routes';
 
 const Hamburger = () => {
   const [open, setOpen] = useState(false);

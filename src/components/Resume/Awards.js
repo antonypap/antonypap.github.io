@@ -1,9 +1,10 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import Award from './Awards/Award';
 
-const Awards = ({ data }) => (
+const Awards = ({ data = [] }) => (
   <div className="awards">
     <div className="link-to" id="awards" />
     <div className="title">
@@ -24,10 +25,6 @@ Awards.propTypes = {
       summary: PropTypes.string,
     }),
   ),
-};
-
-Awards.defaultProps = {
-  data: [],
 };
 
 export default Awards;

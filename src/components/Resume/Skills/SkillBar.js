@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 /* eslint-disable no-bitwise */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -25,7 +26,7 @@ const averageColor = (colors) => {
   return rgbToHex(avg[0], avg[1], avg[2]);
 };
 
-const SkillBar = ({ data, categories }) => {
+const SkillBar = ({ data, categories = [] }) => {
   const { keywords, level, name } = data;
 
   const titleStyle = {
@@ -64,10 +65,6 @@ SkillBar.propTypes = {
       color: PropTypes.string,
     }),
   ),
-};
-
-SkillBar.defaultProps = {
-  categories: [],
 };
 
 export default SkillBar;
