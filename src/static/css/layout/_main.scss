@@ -1,3 +1,5 @@
+@use "../libs/skel";
+
 ///
 /// Future Imperfect by HTML5 UP
 /// html5up.net | @ajlkn
@@ -7,6 +9,6 @@
 /* Main */
 
 #main {
-  @include vendor("flex", "1"); /* Include flex with vendor prefixes for compatibility */
+  @include skel.vendor("flex", "1"); /* Include flex with vendor prefixes for compatibility */
   width: 100%;
 }

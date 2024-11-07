@@ -1,3 +1,6 @@
+@use "../libs/functions";
+@use "../libs/skel";
+
 ///
 /// Future Imperfect by HTML5 UP
 /// html5up.net | @ajlkn
@@ -11,38 +14,38 @@ input,
 select,
 textarea {
   color: var(--color-fg);
-  font-family: _font(family);
+  font-family: functions.font(family);
   font-size: 14pt;
-  font-weight: _font(weight);
+  font-weight: functions.font(weight);
   line-height: 1.75;
 
-  @include breakpoint(xlarge) {
+  @include skel.breakpoint(xlarge) {
     font-size: 12pt;
   }
 
-  @include breakpoint(large) {
+  @include skel.breakpoint(large) {
     font-size: 12pt;
   }
 
-  @include breakpoint(medium) {
+  @include skel.breakpoint(medium) {
     font-size: 12pt;
   }
 
-  @include breakpoint(small) {
+  @include skel.breakpoint(small) {
     font-size: 12pt;
   }
 
-  @include breakpoint(xsmall) {
+  @include skel.breakpoint(xsmall) {
     font-size: 12pt;
   }
 }
 
 a {
-  @include vendor(
+  @include skel.vendor(
     "transition",
     (
-      "color #{_duration(transition)} ease",
-      "border-bottom-color #{_duration(transition)} ease"
+      "color #{functions.duration(transition)} ease",
+      "border-bottom-color #{functions.duration(transition)} ease"
     )
   );
   border-bottom: dotted 1px var(--color-border-alt);
@@ -50,7 +53,7 @@ a {
   text-decoration: none;
 
   &:before {
-    @include vendor("transition", ("color #{_duration(transition)} ease"));
+    @include skel.vendor("transition", ("color #{functions.duration(transition)} ease"));
   }
 
   &:hover {
@@ -66,7 +69,7 @@ a {
 strong,
 b {
   color: var(--color-fg-bold);
-  font-weight: _font(weight-bold);
+  font-weight: functions.font(weight-bold);
 }
 
 em,
@@ -75,7 +78,7 @@ i {
 }
 
 p {
-  margin: 0 0 _size(element-margin) 0;
+  margin: 0 0 functions.size(element-margin) 0;
 }
 
 h1,
@@ -85,11 +88,11 @@ h4,
 h5,
 h6 {
   color: var(--color-fg-bold);
-  font-family: _font(family-heading);
-  font-weight: _font(weight-heading-bold);
-  letter-spacing: _font(kerning-heading);
+  font-family: functions.font(family-heading);
+  font-weight: functions.font(weight-heading-bold);
+  letter-spacing: functions.font(kerning-heading);
   line-height: 1.65;
-  margin: 0 0 (_size(element-margin) * 0.5) 0;
+  margin: 0 0 (functions.size(element-margin) * 0.5) 0;
   text-transform: uppercase;
 
   a {
@@ -133,15 +136,15 @@ sup {
 blockquote {
   border-left: solid 4px var(--color-border);
   font-style: italic;
-  margin: 0 0 _size(element-margin) 0;
-  padding: calc(_size(element-margin) / 4) 0 calc(_size(element-margin) / 4)
-    _size(element-margin);
+  margin: 0 0 functions.size(element-margin) 0;
+  padding: calc(functions.size(element-margin) / 4) 0 calc(functions.size(element-margin) / 4)
+    functions.size(element-margin);
 }
 
 code {
   background: var(--color-border-bg);
   border: solid 1px var(--color-border);
-  font-family: _font(family-fixed);
+  font-family: functions.font(family-fixed);
   font-size: 0.9em;
   margin: 0 0.25em;
   padding: 0.25em 0.65em;
@@ -149,9 +152,9 @@ code {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: _font(family-fixed);
+  font-family: functions.font(family-fixed);
   font-size: 0.9em;
-  margin: 0 0 _size(element-margin) 0;
+  margin: 0 0 functions.size(element-margin) 0;
 
   code {
     display: block;
@@ -164,10 +167,10 @@ pre {
 hr {
   border: 0;
   border-bottom: solid 1px var(--color-border);
-  margin: _size(element-margin) 0;
+  margin: functions.size(element-margin) 0;
 
   &.major {
-    margin: (_size(element-margin) * 1.5) 0;
+    margin: (functions.size(element-margin) * 1.5) 0;
   }
 }
 

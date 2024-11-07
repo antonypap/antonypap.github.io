@@ -1,3 +1,7 @@
+@use "../libs/functions";
+@use "../libs/mixins";
+@use "../libs/skel";
+
 ///
 /// Future Imperfect by HTML5 UP
 /// html5up.net | @ajlkn
@@ -11,8 +15,8 @@ body {
 }
 
 #header {
-  @include vendor("display", "flex");
-  @include vendor("justify-content", "space-between");
+  @include skel.vendor("display", "flex");
+  @include skel.vendor("justify-content", "space-between");
   background-color: var(--color-bg);
   border-bottom: solid 1px var(--color-border);
   height: 3.5em;
@@ -21,7 +25,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: _misc(z-index-base);
+  z-index: functions.misc(z-index-base);
 
   a {
     color: inherit;
@@ -51,7 +55,7 @@ body {
   }
 
   .links {
-    @include vendor("flex", "1");
+    @include skel.vendor("flex", "1");
     border-left: solid 1px var(--color-border);
     height: inherit;
     line-height: inherit;
@@ -74,10 +78,10 @@ body {
 
         a {
           border-bottom: 0;
-          font-family: _font(family-heading);
+          font-family: functions.font(family-heading);
           font-size: 0.7em;
-          font-weight: _font(weight-heading);
-          letter-spacing: _font(kerning-heading);
+          font-weight: functions.font(weight-heading);
+          letter-spacing: functions.font(kerning-heading);
           text-transform: uppercase;
         }
       }
@@ -114,7 +118,7 @@ body {
         }
 
         > a {
-          @include icon;
+          @include mixins.icon;
           border-bottom: 0;
           color: var(--color-fg-light);
           overflow: hidden;
@@ -138,13 +142,13 @@ body {
     }
   }
 
-  @include breakpoint(medium) {
+  @include skel.breakpoint(medium) {
     .links {
       display: none;
     }
   }
 
-  @include breakpoint(small) {
+  @include skel.breakpoint(small) {
     height: 2.75em;
     line-height: 2.75em;
 
@@ -228,7 +232,7 @@ body {
   display: none;
 }
 
-@include breakpoint(medium) {
+@include skel.breakpoint(medium) {
   .hamburger-container {
     display: initial;
   }

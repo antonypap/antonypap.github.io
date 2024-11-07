@@ -1,3 +1,7 @@
+@use "../libs/functions";
+@use "../libs/mixins";
+@use "../libs/skel";
+
 ///
 /// Future Imperfect by HTML5 UP
 /// html5up.net | @ajlkn
@@ -7,19 +11,19 @@
 /* Form */
 
 form {
-  margin: 0 0 _size(element-margin) 0;
+  margin: 0 0 functions.size(element-margin) 0;
 
   &.search {
-    @include icon;
+    @include mixins.icon;
     position: relative;
 
     &:before {
       color: var(--color-fg-light);
       content: "\f002";
       display: block;
-      height: _size(element-height);
+      height: functions.size(element-height);
       left: 0;
-      line-height: _size(element-height);
+      line-height: functions.size(element-height);
       position: absolute;
       text-align: center;
       top: 0;
@@ -36,8 +40,8 @@ label {
   color: var(--color-fg-bold);
   display: block;
   font-size: 0.9em;
-  font-weight: _font(weight-bold);
-  margin: 0 0 (_size(element-margin) * 0.5) 0;
+  font-weight: functions.font(weight-bold);
+  margin: 0 0 (functions.size(element-margin) * 0.5) 0;
 }
 
 input[type="text"],
@@ -46,7 +50,7 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-  @include vendor("appearance", "none");
+  @include skel.vendor("appearance", "none");
   background: var(--color-border-bg);
   border: none;
   border: solid 1px var(--color-border);
@@ -69,7 +73,7 @@ textarea {
 }
 
 .select-wrapper {
-  @include icon;
+  @include mixins.icon;
   display: block;
   position: relative;
 
@@ -77,14 +81,14 @@ textarea {
     color: var(--color-border);
     content: "\f078";
     display: block;
-    height: _size(element-height);
-    line-height: _size(element-height);
+    height: functions.size(element-height);
+    line-height: functions.size(element-height);
     pointer-events: none;
     position: absolute;
     right: 0;
     text-align: center;
     top: 0;
-    width: _size(element-height);
+    width: functions.size(element-height);
   }
 
   select::-ms-expand {
@@ -96,7 +100,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 select {
-  height: _size(element-height);
+  height: functions.size(element-height);
 }
 
 textarea {
@@ -105,7 +109,7 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  @include vendor("appearance", "none");
+  @include skel.vendor("appearance", "none");
   display: block;
   float: left;
   margin-right: -2em;
@@ -114,13 +118,13 @@ input[type="radio"] {
   z-index: -1;
 
   & + label {
-    @include icon;
+    @include mixins.icon;
     color: var(--color-fg);
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
-    font-weight: _font(weight);
-    padding-left: (_size(element-height) * 0.6) + 0.75em;
+    font-weight: functions.font(weight);
+    padding-left: (functions.size(element-height) * 0.6) + 0.75em;
     padding-right: 0.75em;
     position: relative;
 
@@ -129,13 +133,13 @@ input[type="radio"] {
       border: solid 1px var(--color-border);
       content: "";
       display: inline-block;
-      height: (_size(element-height) * 0.6);
+      height: (functions.size(element-height) * 0.6);
       left: 0;
-      line-height: (_size(element-height) * 0.575);
+      line-height: (functions.size(element-height) * 0.575);
       position: absolute;
       text-align: center;
       top: 0;
-      width: (_size(element-height) * 0.6);
+      width: (functions.size(element-height) * 0.6);
     }
   }
 

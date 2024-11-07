@@ -1,3 +1,5 @@
+@use "../libs/functions";
+
 ///
 /// Future Imperfect by HTML5 UP
 /// html5up.net | @ajlkn
@@ -8,7 +10,7 @@
 
 .box {
   border: solid 1px var(--color-border);
-  margin-bottom: _size(element-margin);
+  margin-bottom: functions.size(element-margin);
   padding: 1.5em;
 
   > :last-child,

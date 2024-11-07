@@ -1,3 +1,7 @@
+@use "../libs/functions";
+@use "../libs/mixins";
+@use "../libs/skel";
+
 ///
 /// Future Imperfect by HTML5 UP
 /// html5up.net | @ajlkn
@@ -7,10 +11,10 @@
 /* Post */
 
 .post {
-  @include padding(_size(section-spacing), _size(section-spacing));
+  @include mixins.padding(functions.size(section-spacing), functions.size(section-spacing));
   background: var(--color-bg);
   border: solid 1px var(--color-border);
-  margin: 0 0 _size(section-spacing) 0;
+  margin: 0 0 functions.size(section-spacing) 0;
   position: relative;
 
   figure {
@@ -23,21 +27,21 @@
   }
 
   > header {
-    @include vendor("display", "flex");
+    @include skel.vendor("display", "flex");
     border-bottom: solid 1px var(--color-border);
-    left: (_size(section-spacing) * -1);
-    margin: (_size(section-spacing) * -1) 0 _size(section-spacing) 0;
+    left: (functions.size(section-spacing) * -1);
+    margin: (functions.size(section-spacing) * -1) 0 functions.size(section-spacing) 0;
     position: relative;
-    width: calc(100% + #{_size(section-spacing) * 2});
+    width: calc(100% + #{functions.size(section-spacing) * 2});
 
     .title {
-      @include vendor("flex-grow", "1");
+      @include skel.vendor("flex-grow", "1");
       -ms-flex: 1;
-      padding: (_size(section-spacing) * 1.25) _size(section-spacing)
-        (_size(section-spacing) * 1.1) _size(section-spacing);
+      padding: (functions.size(section-spacing) * 1.25) functions.size(section-spacing)
+        (functions.size(section-spacing) * 1.1) functions.size(section-spacing);
 
       h2 {
-        font-weight: _font(weight-heading-extrabold);
+        font-weight: functions.font(weight-heading-extrabold);
         font-size: 1.5em;
       }
 
@@ -47,14 +51,14 @@
     }
 
     .meta {
-      @include padding(_size(section-spacing) * 1.25, _size(section-spacing));
+      @include mixins.padding(functions.size(section-spacing) * 1.25, functions.size(section-spacing));
       border-left: solid 1px var(--color-border);
       min-width: 17em;
       text-align: right;
       width: 17em;
 
       > * {
-        margin: 0 0 (_size(element-margin) * 0.5) 0;
+        margin: 0 0 (functions.size(element-margin) * 0.5) 0;
       }
 
       > :last-child {
@@ -64,10 +68,10 @@
       .published {
         color: var(--color-fg-bold);
         display: block;
-        font-family: _font(family-heading);
+        font-family: functions.font(family-heading);
         font-size: 0.7em;
-        font-weight: _font(weight-heading-bold);
-        letter-spacing: _font(kerning-heading);
+        font-weight: functions.font(weight-heading-bold);
+        letter-spacing: functions.font(kerning-heading);
         margin-top: 0.5em;
         text-transform: uppercase;
         white-space: nowrap;
@@ -79,25 +83,25 @@
     overflow: hidden;
 
     img {
-      @include vendor(
+      @include skel.vendor(
         "transition",
-        "transform #{_duration(transition)} ease-out"
+        "transform #{functions.duration(transition)} ease-out"
       );
     }
 
     &:hover {
       img {
-        @include vendor("transform", "scale(1.05)");
+        @include skel.vendor("transform", "scale(1.05)");
       }
     }
   }
 
   > footer {
-    @include vendor("display", "flex");
-    @include vendor("align-items", "center");
+    @include skel.vendor("display", "flex");
+    @include skel.vendor("align-items", "center");
 
     .actions {
-      @include vendor("flex-grow", "1");
+      @include skel.vendor("flex-grow", "1");
     }
 
     .stats {
@@ -108,10 +112,10 @@
       li {
         border-left: solid 1px var(--color-border);
         display: inline-block;
-        font-family: _font(family-heading);
+        font-family: functions.font(family-heading);
         font-size: 0.6em;
-        font-weight: _font(weight-heading);
-        letter-spacing: _font(kerning-heading);
+        font-weight: functions.font(weight-heading);
+        letter-spacing: functions.font(kerning-heading);
         line-height: 1;
         margin: 0 0 0 2em;
         padding: 0 0 0 2em;
@@ -135,34 +139,34 @@
     }
   }
 
-  @include breakpoint(medium) {
+  @include skel.breakpoint(medium) {
     border-left: 0;
     border-right: 0;
-    left: _size(section-spacing) * -1;
-    width: calc(100% + (#{_size(section-spacing)} * 2));
+    left: functions.size(section-spacing) * -1;
+    width: calc(100% + (#{functions.size(section-spacing)} * 2));
 
     > header {
-      @include vendor("flex-direction", "column");
-      @include padding(
-        _size(section-spacing) * 1.25,
-        _size(section-spacing),
+      @include skel.vendor("flex-direction", "column");
+      @include mixins.padding(
+        functions.size(section-spacing) * 1.25,
+        functions.size(section-spacing),
         (0, 0, -0.5em, 0)
       );
       border-left: 0;
 
       .title {
         -ms-flex: 0 1 auto;
-        margin: 0 0 _size(element-margin) 0;
+        margin: 0 0 functions.size(element-margin) 0;
         padding: 0;
         text-align: center;
       }
 
       .meta {
-        @include vendor("align-items", "center");
-        @include vendor("display", "flex");
-        @include vendor("justify-content", "center");
+        @include skel.vendor("align-items", "center");
+        @include skel.vendor("display", "flex");
+        @include skel.vendor("justify-content", "center");
         border-left: 0;
-        margin: 0 0 _size(element-margin) 0;
+        margin: 0 0 functions.size(element-margin) 0;
         padding-top: 0;
         padding: 0;
         text-align: left;
@@ -186,7 +190,7 @@
         }
 
         .author {
-          @include vendor("flex-direction", "row-reverse");
+          @include skel.vendor("flex-direction", "row-reverse");
           margin-bottom: 0;
 
           .name {
@@ -201,25 +205,25 @@
     }
   }
 
-  @include breakpoint(small) {
-    @include padding(
-      _size(section-spacing-small),
-      _size(section-spacing-small)
+  @include skel.breakpoint(small) {
+    @include mixins.padding(
+      functions.size(section-spacing-small),
+      functions.size(section-spacing-small)
     );
-    left: _size(section-spacing-small) * -1;
-    margin: 0 0 _size(element-margin) 0;
-    width: calc(100% + (#{_size(section-spacing-small)} * 2));
+    left: functions.size(section-spacing-small) * -1;
+    margin: 0 0 functions.size(element-margin) 0;
+    width: calc(100% + (#{functions.size(section-spacing-small)} * 2));
 
     > header {
-      @include padding(
-        _size(section-spacing-small) * 2,
-        _size(section-spacing-small),
+      @include mixins.padding(
+        functions.size(section-spacing-small) * 2,
+        functions.size(section-spacing-small),
         (0, 0, -0.5em, 0)
       );
-      left: (_size(section-spacing-small) * -1);
-      margin: (_size(section-spacing-small) * -1) 0 _size(section-spacing-small)
+      left: (functions.size(section-spacing-small) * -1);
+      margin: (functions.size(section-spacing-small) * -1) 0 functions.size(section-spacing-small)
         0;
-      width: calc(100% + #{_size(section-spacing-small) * 2});
+      width: calc(100% + #{functions.size(section-spacing-small) * 2});
 
       .title {
         h2 {
@@ -229,15 +233,15 @@
     }
   }
 
-  @include breakpoint(xsmall) {
+  @include skel.breakpoint(xsmall) {
     > header {
       .meta {
-        @include vendor("align-items", "center");
-        @include vendor("flex-direction", "column");
+        @include skel.vendor("align-items", "center");
+        @include skel.vendor("flex-direction", "column");
 
         > * {
           border-left: 0;
-          margin: (_size(element-margin) * 0.5) 0 0 0;
+          margin: (functions.size(element-margin) * 0.5) 0 0 0;
           padding-left: 0;
         }
 
@@ -250,14 +254,14 @@
     }
 
     > .image.featured {
-      margin-left: _size(section-spacing-small) * -1;
-      margin-top: calc(#{_size(section-spacing-small) * -1} - 1px);
-      width: calc(100% + #{_size(section-spacing-small) * 2});
+      margin-left: functions.size(section-spacing-small) * -1;
+      margin-top: calc(#{functions.size(section-spacing-small) * -1} - 1px);
+      width: calc(100% + #{functions.size(section-spacing-small) * 2});
     }
 
     > footer {
-      @include vendor("align-items", "stretch");
-      @include vendor("flex-direction", "column-reverse");
+      @include skel.vendor("align-items", "stretch");
+      @include skel.vendor("flex-direction", "column-reverse");
 
       .stats {
         text-align: center;
