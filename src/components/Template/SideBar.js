@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import ContactIcons from '../Contact/ContactIcons';
 import details from '../../data/info';
+import PersonalTitle from '../Profile/ProfileTitle';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -14,6 +15,7 @@ const SideBar = () => (
       </Link>
       <header>
         <h2>{details.basics.name}</h2>
+        <PersonalTitle />
         <p>
           <a href={`mailto:${details.basics.email}`}>{details.basics.email}</a>
         </p>
