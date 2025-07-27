@@ -60,8 +60,13 @@ const skills = [
     keywords: ['Web Development', 'Databases', 'Languages'],
   },
   {
+    name: 'Postgres',
+    level: 4,
+    keywords: ['Web Development', 'Databases', 'Languages'],
+  },
+  {
     name: 'Redis',
-    level: 2,
+    level: 3,
     keywords: ['Web Development', 'Databases'],
   },
   {
@@ -101,17 +106,22 @@ const skills = [
   },
   {
     name: 'Kubernetes',
-    level: 1,
+    level: 2,
+    keywords: ['Tools', 'Data Engineering', 'Cloud', 'DevOps/MLOps'],
+  },
+  {
+    name: 'Helm',
+    level: 2,
     keywords: ['Tools', 'Data Engineering', 'Cloud', 'DevOps/MLOps'],
   },
   {
     name: 'Azure',
-    level: 2,
+    level: 1,
     keywords: ['Tools', 'Web Development', 'Cloud'],
   },
   {
     name: 'Docker',
-    level: 3,
+    level: 4,
     keywords: ['Tools', 'Data Engineering', 'DevOps/MLOps'],
   },
   {
@@ -121,7 +131,7 @@ const skills = [
   },
   {
     name: 'Terraform',
-    level: 1,
+    level: 2,
     keywords: ['Tools', 'Data Engineering', 'Cloud', 'DevOps/MLOps'],
   },
   {
@@ -152,6 +162,11 @@ const skills = [
   {
     name: 'PyTorch',
     level: 4,
+    keywords: ['ML Engineering', 'Python'],
+  },
+  {
+    name: 'LangChain',
+    level: 3,
     keywords: ['ML Engineering', 'Python'],
   },
   {
@@ -191,12 +206,12 @@ const skills = [
   },
   {
     name: 'Data Visualization',
-    level: 4,
+    level: 3,
     keywords: ['Data Science'],
   },
   {
     name: 'Pandas',
-    level: 5,
+    level: 4,
     keywords: ['Data Engineering', 'ML Engineering', 'Python'],
   },
   {

@@ -14,6 +14,17 @@
 
 const work = [
   {
+    name: 'E.ON Next',
+    position: 'Backend Software Engineer',
+    url: 'https://www.eonnext.com/',
+    startDate: '2024-11-18',
+    endDate: undefined,
+    summary: 'E.ON Next is an energy supplier in the UK, determined to make new energy work for everyone, removing the barriers of the energy transition using technology and innovation.',
+    highlights: [
+      'Part of the GenAI squad, focusing on building AI-driven solutions to enhance customer experience and operational efficiency',
+    ],
+  },
+  {
     name: 'Kaedim',
     position: 'Machine Learning Engineer',
     url: 'https://www.kaedim3d.com/',
