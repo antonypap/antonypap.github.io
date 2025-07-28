@@ -59,6 +59,7 @@ jobs:
             local max=5
             local delay=1
             while true; do
+            export PUPPETEER_EXECUTABLE_PATH=$(which google-chrome)
               "$@" && break || {
                 if [[ $n -lt $max ]]; then
                   ((n++))
@@ -74,6 +75,9 @@ jobs:
           retry npm run predeploy
         env:
           NODE_ENV: development
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+          PUPPETEER_ARGS: --no-sandbox --disable-setuid-sandbox
       - name: Test
         run: npm test
         env:
