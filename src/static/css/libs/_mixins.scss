@@ -1,4 +1,5 @@
 @use "sass:list";
+@use "sass:math";
 @use "functions";
 @use "skel";
 
@@ -33,7 +34,7 @@
   }
 
   padding: ($tb + list.nth($pad, 1)) ($lr + list.nth($pad, 2))
-    max(0.1em, $tb - functions.size(element-margin) + list.nth($pad, 3)) ($lr + list.nth($pad, 4))
+    math.max(0.1em, $tb - functions.size(element-margin) + list.nth($pad, 3)) ($lr + list.nth($pad, 4))
     #{$important};
 }
 

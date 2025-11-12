@@ -15,7 +15,7 @@
 const work = [
   {
     name: 'E.ON Next',
-    position: 'Backend Software Engineer',
+    position: 'AI Software Engineer',
     url: 'https://www.eonnext.com/',
     startDate: '2024-11-18',
     endDate: undefined,

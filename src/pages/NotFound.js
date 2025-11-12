@@ -54,7 +54,8 @@ const PageNotFound = () => {
   return (
     <HelmetProvider>
       <div className="not-found">
-        <Helmet title="404 Not Found">
+        <Helmet>
+          <title>404 Not Found</title>
           <meta name="description" content="The content you are looking for cannot be found." />
         </Helmet>
         <h1 id="countUp" ref={countRef} data-count="404" className="number">0</h1>
