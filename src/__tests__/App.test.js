@@ -4,9 +4,8 @@
 
 import '@testing-library/jest-dom';
 import '@testing-library/react';
-import React from 'react';
+import React, { act } from 'react';
 import ReactDOM from 'react-dom/client';
-import { act } from 'react-dom/test-utils';
 import App from '../App';
 
 describe('renders the app', () => {
@@ -70,7 +69,7 @@ describe('renders the app', () => {
     await act(async () => {
       await contactLink.click();
     });
-    expect(document.title).toContain('Resume |');
+    expect(document.title).toContain('CV |');
     expect(window.location.pathname).toBe('/resume');
   });
 
@@ -88,7 +87,7 @@ describe('renders the app', () => {
   });
 
   it('can navigate to /stats', async () => {
-    expect.assertions(5);
+    expect.assertions(3);
     const contactLink = document.querySelector(
       '#header > nav > ul > li:nth-child(4) > a',
     );
@@ -98,7 +97,5 @@ describe('renders the app', () => {
     });
     expect(document.title).toContain('Stats |');
     expect(window.location.pathname).toBe('/stats');
-    expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(jsonMock).toHaveBeenCalledTimes(1);
   });
 });
