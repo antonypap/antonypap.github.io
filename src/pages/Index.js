@@ -6,28 +6,31 @@ import Main from '../layouts/Main';
 const Index = () => (
   <Main
     description={
-      "Antonios Papaoikonomou's personal website. London, UK based Imperial College London and NTUA graduate, "
-      + 'Software Engineer and Machine Learning Engineer.'
+      "Antonios Papaoikonomou's personal website. London-based AI Engineer, Machine Learning Engineer, "
+      + 'and Software Engineer building production AI systems.'
     }
   >
     <article className="post" id="index">
       <header>
         <div className="title">
           <h2>
-            <a href="https://github.com/antonypap/antonypap.github.io">About this site</a>
+            <Link to="/about">Antonios Papaoikonomou</Link>
           </h2>
           <p>
-            A responsive, statically-generated, react application
-            written with modern Javascript.
+            AI Engineer, Machine Learning Engineer, and Software Engineer based in London.
           </p>
         </div>
       </header>
       <p>
-        {' '}
-        Welcome to my website! Explore more{' '}
-        <Link to="/about">about me</Link>, browse my{' '}
-        <Link to="/resume">CV</Link>, <Link to="/projects">projects</Link>, or{' '}
-        check out some <Link to="/stats">fun statistics</Link>.
+        Welcome to my corner of the internet. I build production AI systems across LLM
+        platforms, voice agents, ML infrastructure, and the useful bits of software
+        engineering that make ambitious ideas survive contact with reality.
+      </p>
+      <p>
+        You can read more <Link to="/about">about me</Link>, browse my{' '}
+        <Link to="/resume">CV</Link>, explore selected{' '}
+        <Link to="/projects">projects</Link>, or check out some{' '}
+        <Link to="/stats">fun statistics</Link>.
       </p>
       <figure>
         <img

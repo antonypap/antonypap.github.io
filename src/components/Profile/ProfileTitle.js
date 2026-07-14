@@ -2,7 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 const titles = [
-  'Software Engineer',
+  'AI Engineer',
   'ML Enthusiast',
   'F1 Fanatic 🏎️',
   'Guitar Hero in Training 🎸',

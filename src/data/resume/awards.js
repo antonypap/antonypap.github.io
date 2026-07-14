@@ -33,7 +33,7 @@ const awards = [
     title: '4th Overall Place in the F1 in Schools Greek National Finals',
     date: '2014-05-01',
     awarder: 'F1 in Schools',
-    summary: 'Team Sciron, Awards include: Best Oral Team Presentation Award, Most Creative and Innovative Thinking Award (Awarded for using a vinyl wrapping technique in painting the vehicle), Pressure Challenge Award',
+    summary: 'Team Sciron — Awards include Best Oral Team Presentation and Most Creative and Innovative Thinking Award',
   },
 ];
 

@@ -6,17 +6,50 @@ import projects from './resume/projects';
 import publications from './resume/publications';
 import awards from './resume/awards';
 import volunteer from './resume/volunteering';
-import { skills } from './resume/skills';
+import { categories, skills } from './resume/skills';
+
+const mapLevel = (level) => {
+  if (level >= 5) return 'Expert';
+  if (level >= 4) return 'Advanced';
+  if (level >= 3) return 'Proficient';
+  if (level >= 2) return 'Familiar';
+  return 'Beginner';
+};
+
+const resumeSkills = categories.map(({ name }) => {
+  const matchingSkills = skills.filter(({ keywords }) => keywords.includes(name));
+  const averageLevel = matchingSkills.reduce(
+    (sum, { level }) => sum + level,
+    0,
+  ) / matchingSkills.length;
+
+  return {
+    name,
+    level: mapLevel(Math.round(averageLevel)),
+    keywords: matchingSkills.map(({ name: skillName }) => skillName),
+  };
+});
+
+const resumeProjects = projects.map(({
+  title, subtitle, date, description, url,
+}) => ({
+  name: title,
+  description: subtitle || description,
+  highlights: [description],
+  keywords: [],
+  startDate: date,
+  url,
+}));
 
 const details = {
   basics: {
     firstName: 'Antonios',
     lastName: 'Papaoikonomou',
     name: 'Antonios Papaoikonomou',
-    label: 'Software Engineer and Machine Learning Engineer | MSc Applied Machine Learning @ Imperial',
+    label: 'Machine Learning and AI Engineer | MSc Applied Machine Learning @ Imperial',
     email: 'antonypap@hotmail.com',
     url: 'https://antonypap.github.io/',
-    summary: '',
+    summary: 'Machine Learning and AI Engineer with experience building and operating production AI systems across LLM platforms, voice agents, and scalable ML infrastructure. Strong background in software engineering, cloud-native ML, and end-to-end model lifecycle (data → training → serving → observability). Experienced in Kubernetes, AWS, FastAPI/Celery, and deploying low-latency ML systems at scale.',
     location: {
       city: 'London',
       countryCode: 'UK',
@@ -93,11 +126,11 @@ const details = {
   ],
   education,
   work,
-  projects,
+  projects: resumeProjects,
   publications,
   awards,
   volunteer,
-  skills,
+  skills: resumeSkills,
 };
 
 export default details;
