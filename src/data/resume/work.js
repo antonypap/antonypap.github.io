@@ -41,7 +41,7 @@ const work = [
   {
     name: 'Hellenic Army General Staff',
     position: 'Software Engineer',
-    url: 'https://army.gr/en/archiki-en/',
+    url: 'https://army.gr/en/',
     startDate: '2022-09-21',
     endDate: '2021-11-18',
     summary: 'Research and Informatics Corps, involved in Internal Ops and Cyber-defence.',
