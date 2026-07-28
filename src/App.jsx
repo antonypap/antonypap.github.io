@@ -4,7 +4,7 @@ import Main from './layouts/Main'; // fallback for lazy pages
 import './static/css/main.scss'; // All of our styles
 import details from './data/info';
 
-const { PUBLIC_URL } = process.env;
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
 
 // Every route - we lazy load so that each page can be chunked
 // NOTE that some of these chunks are very small. We should optimize
@@ -25,10 +25,7 @@ const JSONResume = () => (
 );
 
 const App = () => (
-  <BrowserRouter
-    basename={PUBLIC_URL}
-    future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-  >
+  <BrowserRouter basename={basename}>
     <Suspense fallback={<Main />}>
       <Routes>
         <Route path="/" element={<Index />} />

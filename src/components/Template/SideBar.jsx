@@ -5,13 +5,13 @@ import ContactIcons from '../Contact/ContactIcons';
 import details from '../../data/info';
 import PersonalTitle from '../Profile/ProfileTitle';
 
-const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
+const publicUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+        <img src={`${publicUrl}/images/me.jpg`} alt="" />
       </Link>
       <header>
         <h2>{details.basics.name}</h2>

@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
-const DEFAULT_IMAGE = `${process.env.PUBLIC_URL}/images/projects/default.jpg`; // Adjust path as needed
+const publicUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const DEFAULT_IMAGE = `${publicUrl}/images/projects/default.jpg`;
 
 const Cell = ({ data }) => {
   const imageUrl = data.image
-    ? `${process.env.PUBLIC_URL}${data.image}`
+    ? `${publicUrl}${data.image}`
     : DEFAULT_IMAGE;
 
   return (

@@ -1,10 +1,12 @@
 /* eslint-disable react/require-default-props */
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Markdown from 'markdown-to-jsx';
 
 import Main from '../layouts/Main';
+// eslint-disable-next-line import/no-unresolved
+import aboutMarkdown from '../data/about.md?raw';
 
 const SpotifyPlaylistEmbed = ({ playlistId, height = 152 }) => {
   const [isClient, setIsClient] = useState(false);
@@ -35,17 +37,7 @@ SpotifyPlaylistEmbed.propTypes = {
 };
 
 const About = () => {
-  const [markdown, setMarkdown] = useState('');
-
-  useEffect(() => {
-    import('../data/about.md').then((res) => {
-      fetch(res.default)
-        .then((r) => r.text())
-        .then(setMarkdown);
-    });
-  });
-
-  const count = markdown
+  const count = aboutMarkdown
     .split(/\s+/)
     .map((s) => s.replace(/\W/g, ''))
     .filter((s) => s.length).length;
@@ -61,7 +53,7 @@ const About = () => {
             <p>(in about {count} words)</p>
           </div>
         </header>
-        <Markdown>{markdown}</Markdown>
+        <Markdown>{aboutMarkdown}</Markdown>
         {/* <div>
           In the meantime, you can also check out this playlist:
           <SpotifyPlaylistEmbed playlistId="3rGSys39PU0pSehtA1YRj8" />

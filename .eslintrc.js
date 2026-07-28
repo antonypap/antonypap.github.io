@@ -7,9 +7,17 @@ module.exports = {
     node: true,
   },
   extends: 'airbnb',
-  ignorePatterns: ['node_modules/', 'build/'],
+  ignorePatterns: ['node_modules/', 'build/', 'dist/'],
   parser: '@babel/eslint-parser',
   plugins: ['react'],
+  overrides: [
+    {
+      files: ['src/setupTests.js', 'src/**/*.test.js'],
+      rules: {
+        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+      },
+    },
+  ],
   rules: {
     'jsx-a11y/anchor-is-valid': [
       'error',
