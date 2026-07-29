@@ -15,11 +15,11 @@
 
   .copyright {
     color: var(--color-fg-light);
-    font-family: functions.font(family-heading);
-    font-size: 0.5em;
-    font-weight: functions.font(weight-heading);
-    letter-spacing: functions.font(kerning-heading);
-    text-transform: uppercase;
+    font-family: functions.font(family);
+    font-size: 0.7em;
+    font-weight: functions.font(weight);
+    letter-spacing: 0;
+    text-transform: none;
   }
 
   body.single & {

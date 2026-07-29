@@ -24,7 +24,7 @@
       padding: 1.25em;
       background-color: var(--color-bg-transp);
       color: var(--color-fg-bold);
-      font-family: "Raleway", Helvetica, sans-serif;
+      font-family: functions.font(family);
       z-index: 1000;
       transition: all 0.1s;
       -webkit-transition: all 0.1s ease-in-out;
@@ -78,13 +78,13 @@
     @include skel.vendor("flex-grow", "1");
 
     h3 {
-      font-size: 0.7em;
+      font-size: 0.8em;
     }
 
     .published {
       display: block;
       font-family: functions.font(family-heading);
-      font-size: 0.6em;
+      font-size: 0.7em;
       font-weight: functions.font(weight-heading);
       letter-spacing: functions.font(kerning-heading);
       margin: -0.625em 0 (functions.size(element-margin) * 0.85) 0;

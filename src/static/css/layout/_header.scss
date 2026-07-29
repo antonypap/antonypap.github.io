@@ -79,7 +79,7 @@ body {
         a {
           border-bottom: 0;
           font-family: functions.font(family-heading);
-          font-size: 0.7em;
+          font-size: 0.75em;
           font-weight: functions.font(weight-heading);
           letter-spacing: functions.font(kerning-heading);
           text-transform: uppercase;
@@ -195,7 +195,7 @@ body {
 .bm-item-list {
   color: var(--color-fg-bold);
   padding: 0.8em;
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "JetBrains Mono", monospace;
 }
 
 #header .index-link {

@@ -1,8 +1,18 @@
+@use "../libs/functions";
 @use "../libs/skel";
 
 /* Resume */
 
 #resume {
+  > header .title > p {
+    font-family: functions.font(family);
+    font-size: 0.9em;
+    letter-spacing: 0;
+    line-height: 1.6;
+    margin-top: 0.5em;
+    text-transform: none;
+  }
+
   .link-to {
     position: relative;
     top: -4.5em;
@@ -12,6 +22,7 @@
     text-decoration: none;
     border-bottom: none;
     display: inline-flex;
+    font-size: 0.8em;
 
     a {
       padding: 0 0.5em;
@@ -27,21 +38,24 @@
   }
   .degree-container {
     h4 {
-      font-weight: normal;
+      font-family: functions.font(family);
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: none;
     }
   
     .degree {
       margin-bottom: 0.1em;
-      text-transform: none;
-      letter-spacing: 0.16em;
-      font-size: 0.8em;
+      font-size: 1em;
     }
   
     .school {
-      // text-transform: none;
-      // letter-spacing: 0.16em;
+      font-family: functions.font(family);
+      font-size: 0.9em;
+      letter-spacing: 0;
       padding-top: 0.3em;
       margin-bottom: 1em;
+      text-transform: none;
     }
   }
 
@@ -59,7 +73,17 @@
   }
   .jobs-container {
     h4 {
-      letter-spacing: 0.16em;
+      font-family: functions.font(family);
+      font-size: 1em;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    .daterange {
+      font-family: functions.font(family);
+      font-size: 0.9em;
+      letter-spacing: 0;
+      text-transform: none;
     }
     .points {
       li {
@@ -77,8 +101,12 @@
   }
   .publication-container {
     .name {
-      letter-spacing: 0.16em;
+      font-family: functions.font(family);
+      font-size: 1em;
+      font-weight: 600;
+      letter-spacing: 0;
       margin-top: 2em;
+      text-transform: none;
     }
     // .authors {
     //   margin: 0;
@@ -88,11 +116,11 @@
       padding-bottom: 0.8em;
     }
     p {
+      font-family: functions.font(family);
+      font-size: 0.9em;
       text-transform: none;
-      letter-spacing: 0.16em;
-      line-height: 2em; // Set line height to remove extra spacing between lines
-      // font-size: 0.8em;
-      // margin: 0;
+      letter-spacing: 0;
+      line-height: 1.6;
     }
   }
 
@@ -104,12 +132,17 @@
   }
   .award-container {
     .award-title {
+      font-family: functions.font(family);
+      font-size: 1em;
+      font-weight: 600;
+      letter-spacing: 0;
       text-transform: none;
-      letter-spacing: 0.16em;
-      font-size: 0.75em;
     }
     .awarder {
-      letter-spacing: 0.16em;
+      font-family: functions.font(family);
+      font-size: 0.9em;
+      letter-spacing: 0;
+      text-transform: none;
     }
     p {
       margin-bottom: 0.8em;
@@ -162,13 +195,13 @@
 }
 .courses .course-name {
   display: inline;
-  font-family: "Raleway", Helvetica, sans-serif;
-  font-size: 0.7em;
-  font-weight: 400;
-  letter-spacing: 0.25em;
-  line-height: 2.5;
+  font-family: functions.font(family);
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.75;
   margin-top: -1em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .courses ul li {

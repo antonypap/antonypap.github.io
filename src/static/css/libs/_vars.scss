@@ -21,25 +21,24 @@ $size: (
 // Font.
 $font: (
   family: (
-    "Source Sans Pro",
+    "IBM Plex Sans",
     Helvetica,
     sans-serif,
   ),
   family-fixed: (
-    "Courier New",
+    "JetBrains Mono",
     monospace,
   ),
   family-heading: (
-    "Raleway",
-    Helvetica,
-    sans-serif,
+    "JetBrains Mono",
+    monospace,
   ),
   weight: 400,
   weight-bold: 700,
   weight-heading: 400,
   weight-heading-bold: 800,
-  weight-heading-extrabold: 900,
-  kerning-heading: 0.25em,
+  weight-heading-extrabold: 800,
+  kerning-heading: 0.08em,
 );
 
 /* Light mode (default) */
